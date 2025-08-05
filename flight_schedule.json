@@ -1,0 +1,2674 @@
+{
+    "airport": "CGH",
+    "fetched_at_utc": "2025-08-05T02:53:03.199352Z",
+    "arrivals": [
+        {
+            "flight": {
+                "identification": {
+                    "id": null,
+                    "row": 5693751966,
+                    "number": {
+                        "default": "G31443",
+                        "alternative": null
+                    },
+                    "callsign": null,
+                    "codeshare": null
+                },
+                "status": {
+                    "live": false,
+                    "text": "Scheduled",
+                    "icon": null,
+                    "estimated": null,
+                    "ambiguous": false,
+                    "generic": {
+                        "status": {
+                            "text": "scheduled",
+                            "type": "arrival",
+                            "color": "gray",
+                            "diverted": null
+                        },
+                        "eventTime": {
+                            "utc": null,
+                            "local": null
+                        }
+                    }
+                },
+                "aircraft": {
+                    "model": {
+                        "code": "7M8",
+                        "text": ""
+                    },
+                    "hex": "",
+                    "registration": "",
+                    "serialNo": "",
+                    "images": null
+                },
+                "owner": null,
+                "airline": {
+                    "name": "GOL Linhas Aereas",
+                    "code": {
+                        "iata": "G3",
+                        "icao": "GLO"
+                    },
+                    "short": "GOL Linhas Aereas"
+                },
+                "airport": {
+                    "origin": {
+                        "code": {
+                            "iata": "FOR",
+                            "icao": "SBFZ"
+                        },
+                        "timezone": {
+                            "name": "America/Fortaleza",
+                            "offset": -10800,
+                            "abbr": "-03",
+                            "abbrName": null,
+                            "isDst": false
+                        },
+                        "info": {
+                            "terminal": null,
+                            "baggage": null,
+                            "gate": "23"
+                        },
+                        "name": "Fortaleza Pinto Martins International Airport",
+                        "position": {
+                            "latitude": -3.77628,
+                            "longitude": -38.532501,
+                            "country": {
+                                "name": "Brazil",
+                                "code": "BR",
+                                "id": 32
+                            },
+                            "region": {
+                                "city": "Fortaleza"
+                            }
+                        },
+                        "visible": true
+                    },
+                    "destination": {
+                        "timezone": {
+                            "name": "America/Sao_Paulo",
+                            "offset": -10800,
+                            "abbr": "-03",
+                            "abbrName": null,
+                            "isDst": false
+                        },
+                        "info": {
+                            "terminal": null,
+                            "baggage": null,
+                            "gate": null
+                        }
+                    },
+                    "real": null
+                },
+                "time": {
+                    "scheduled": {
+                        "departure": 1754372400,
+                        "arrival": 1754384700
+                    },
+                    "real": {
+                        "departure": null,
+                        "arrival": null
+                    },
+                    "estimated": {
+                        "departure": 1754372400,
+                        "arrival": null
+                    },
+                    "other": {
+                        "eta": null,
+                        "duration": null
+                    }
+                }
+            }
+        },
+        {
+            "flight": {
+                "identification": {
+                    "id": null,
+                    "row": 5693785730,
+                    "number": {
+                        "default": "LA4641",
+                        "alternative": "JJ4641"
+                    },
+                    "callsign": null,
+                    "codeshare": null
+                },
+                "status": {
+                    "live": false,
+                    "text": "Scheduled",
+                    "icon": null,
+                    "estimated": null,
+                    "ambiguous": false,
+                    "generic": {
+                        "status": {
+                            "text": "scheduled",
+                            "type": "arrival",
+                            "color": "gray",
+                            "diverted": null
+                        },
+                        "eventTime": {
+                            "utc": null,
+                            "local": null
+                        }
+                    }
+                },
+                "aircraft": {
+                    "model": {
+                        "code": "A20N",
+                        "text": "Airbus A320-271N"
+                    },
+                    "registration": "PR-XBK",
+                    "country": {
+                        "id": 32,
+                        "name": "Brazil",
+                        "alpha2": "BR",
+                        "alpha3": "BRA"
+                    },
+                    "hex": "E4999E",
+                    "restricted": false,
+                    "serialNo": null,
+                    "age": {
+                        "availability": true
+                    },
+                    "availability": {
+                        "serialNo": true,
+                        "age": true
+                    }
+                },
+                "owner": {
+                    "name": "LATAM Brasil",
+                    "code": {
+                        "iata": "JJ",
+                        "icao": "TAM"
+                    },
+                    "logo": "https://cdn.flightradar24.com/assets/airlines/logotypes/55.png"
+                },
+                "airline": {
+                    "name": "LATAM Airlines (Conheça o Brasil Voando Sticker)",
+                    "code": {
+                        "iata": "LA",
+                        "icao": "LAN"
+                    },
+                    "short": "LATAM Airlines"
+                },
+                "airport": {
+                    "origin": {
+                        "code": {
+                            "iata": "REC",
+                            "icao": "SBRF"
+                        },
+                        "timezone": {
+                            "name": "America/Recife",
+                            "offset": -10800,
+                            "abbr": "-03",
+                            "abbrName": null,
+                            "isDst": false
+                        },
+                        "info": {
+                            "terminal": "1",
+                            "baggage": null,
+                            "gate": "8"
+                        },
+                        "name": "Recife Airport",
+                        "position": {
+                            "latitude": -8.12679,
+                            "longitude": -34.923,
+                            "country": {
+                                "name": "Brazil",
+                                "code": "BR",
+                                "id": 32
+                            },
+                            "region": {
+                                "city": "Recife"
+                            }
+                        },
+                        "visible": true
+                    },
+                    "destination": {
+                        "timezone": {
+                            "name": "America/Sao_Paulo",
+                            "offset": -10800,
+                            "abbr": "-03",
+                            "abbrName": null,
+                            "isDst": false
+                        },
+                        "info": {
+                            "terminal": null,
+                            "baggage": null,
+                            "gate": null
+                        }
+                    },
+                    "real": null
+                },
+                "time": {
+                    "scheduled": {
+                        "departure": 1754372700,
+                        "arrival": 1754385000
+                    },
+                    "real": {
+                        "departure": null,
+                        "arrival": null
+                    },
+                    "estimated": {
+                        "departure": 1754373420,
+                        "arrival": null
+                    },
+                    "other": {
+                        "eta": null,
+                        "duration": null
+                    }
+                }
+            }
+        },
+        {
+            "flight": {
+                "identification": {
+                    "id": null,
+                    "row": 5693753493,
+                    "number": {
+                        "default": "G32119",
+                        "alternative": null
+                    },
+                    "callsign": null,
+                    "codeshare": null
+                },
+                "status": {
+                    "live": false,
+                    "text": "Scheduled",
+                    "icon": null,
+                    "estimated": null,
+                    "ambiguous": false,
+                    "generic": {
+                        "status": {
+                            "text": "scheduled",
+                            "type": "arrival",
+                            "color": "gray",
+                            "diverted": null
+                        },
+                        "eventTime": {
+                            "utc": null,
+                            "local": null
+                        }
+                    }
+                },
+                "aircraft": {
+                    "model": {
+                        "code": "73G",
+                        "text": ""
+                    },
+                    "hex": "",
+                    "registration": "",
+                    "serialNo": "",
+                    "images": null
+                },
+                "owner": null,
+                "airline": {
+                    "name": "GOL Linhas Aereas",
+                    "code": {
+                        "iata": "G3",
+                        "icao": "GLO"
+                    },
+                    "short": "GOL Linhas Aereas"
+                },
+                "airport": {
+                    "origin": {
+                        "code": {
+                            "iata": "SJP",
+                            "icao": "SBSR"
+                        },
+                        "timezone": {
+                            "name": "America/Sao_Paulo",
+                            "offset": -10800,
+                            "abbr": "-03",
+                            "abbrName": null,
+                            "isDst": false
+                        },
+                        "info": {
+                            "terminal": null,
+                            "baggage": null,
+                            "gate": null
+                        },
+                        "name": "Sao Jose Do Rio Preto Airport",
+                        "position": {
+                            "latitude": -20.8165,
+                            "longitude": -49.406502,
+                            "country": {
+                                "name": "Brazil",
+                                "code": "BR",
+                                "id": 32
+                            },
+                            "region": {
+                                "city": "Sao Jose Do Rio Preto"
+                            }
+                        },
+                        "visible": true
+                    },
+                    "destination": {
+                        "timezone": {
+                            "name": "America/Sao_Paulo",
+                            "offset": -10800,
+                            "abbr": "-03",
+                            "abbrName": null,
+                            "isDst": false
+                        },
+                        "info": {
+                            "terminal": null,
+                            "baggage": null,
+                            "gate": null
+                        }
+                    },
+                    "real": null
+                },
+                "time": {
+                    "scheduled": {
+                        "departure": 1754381100,
+                        "arrival": 1754385300
+                    },
+                    "real": {
+                        "departure": null,
+                        "arrival": null
+                    },
+                    "estimated": {
+                        "departure": 1754381100,
+                        "arrival": null
+                    },
+                    "other": {
+                        "eta": null,
+                        "duration": null
+                    }
+                }
+            }
+        },
+        {
+            "flight": {
+                "identification": {
+                    "id": null,
+                    "row": 5693783443,
+                    "number": {
+                        "default": "LA3057",
+                        "alternative": "JJ3057"
+                    },
+                    "callsign": null,
+                    "codeshare": null
+                },
+                "status": {
+                    "live": false,
+                    "text": "Scheduled",
+                    "icon": null,
+                    "estimated": null,
+                    "ambiguous": false,
+                    "generic": {
+                        "status": {
+                            "text": "scheduled",
+                            "type": "arrival",
+                            "color": "gray",
+                            "diverted": null
+                        },
+                        "eventTime": {
+                            "utc": null,
+                            "local": null
+                        }
+                    }
+                },
+                "aircraft": {
+                    "model": {
+                        "code": "A320",
+                        "text": "Airbus A320-214"
+                    },
+                    "registration": "PR-MHZ",
+                    "country": {
+                        "id": 32,
+                        "name": "Brazil",
+                        "alpha2": "BR",
+                        "alpha3": "BRA"
+                    },
+                    "hex": "E48275",
+                    "restricted": false,
+                    "serialNo": null,
+                    "age": {
+                        "availability": true
+                    },
+                    "availability": {
+                        "serialNo": true,
+                        "age": true
+                    }
+                },
+                "owner": {
+                    "name": "LATAM Brasil",
+                    "code": {
+                        "iata": "JJ",
+                        "icao": "TAM"
+                    },
+                    "logo": "https://cdn.flightradar24.com/assets/airlines/logotypes/55.png"
+                },
+                "airline": {
+                    "name": "LATAM Airlines",
+                    "code": {
+                        "iata": "LA",
+                        "icao": "LAN"
+                    },
+                    "short": "LATAM Airlines"
+                },
+                "airport": {
+                    "origin": {
+                        "code": {
+                            "iata": "CWB",
+                            "icao": "SBCT"
+                        },
+                        "timezone": {
+                            "name": "America/Sao_Paulo",
+                            "offset": -10800,
+                            "abbr": "-03",
+                            "abbrName": null,
+                            "isDst": false
+                        },
+                        "info": {
+                            "terminal": "1",
+                            "baggage": null,
+                            "gate": null
+                        },
+                        "name": "Curitiba Afonso Pena International Airport",
+                        "position": {
+                            "latitude": -25.5284,
+                            "longitude": -49.175701,
+                            "country": {
+                                "name": "Brazil",
+                                "code": "BR",
+                                "id": 32
+                            },
+                            "region": {
+                                "city": "Curitiba"
+                            }
+                        },
+                        "visible": true
+                    },
+                    "destination": {
+                        "timezone": {
+                            "name": "America/Sao_Paulo",
+                            "offset": -10800,
+                            "abbr": "-03",
+                            "abbrName": null,
+                            "isDst": false
+                        },
+                        "info": {
+                            "terminal": null,
+                            "baggage": null,
+                            "gate": null
+                        }
+                    },
+                    "real": null
+                },
+                "time": {
+                    "scheduled": {
+                        "departure": 1754382000,
+                        "arrival": 1754385900
+                    },
+                    "real": {
+                        "departure": null,
+                        "arrival": null
+                    },
+                    "estimated": {
+                        "departure": 1754382720,
+                        "arrival": null
+                    },
+                    "other": {
+                        "eta": null,
+                        "duration": null
+                    }
+                }
+            }
+        },
+        {
+            "flight": {
+                "identification": {
+                    "id": null,
+                    "row": 5693752302,
+                    "number": {
+                        "default": "G31563",
+                        "alternative": null
+                    },
+                    "callsign": null,
+                    "codeshare": null
+                },
+                "status": {
+                    "live": false,
+                    "text": "Scheduled",
+                    "icon": null,
+                    "estimated": null,
+                    "ambiguous": false,
+                    "generic": {
+                        "status": {
+                            "text": "scheduled",
+                            "type": "arrival",
+                            "color": "gray",
+                            "diverted": null
+                        },
+                        "eventTime": {
+                            "utc": null,
+                            "local": null
+                        }
+                    }
+                },
+                "aircraft": {
+                    "model": {
+                        "code": "7M8",
+                        "text": ""
+                    },
+                    "hex": "",
+                    "registration": "",
+                    "serialNo": "",
+                    "images": null
+                },
+                "owner": null,
+                "airline": {
+                    "name": "GOL Linhas Aereas",
+                    "code": {
+                        "iata": "G3",
+                        "icao": "GLO"
+                    },
+                    "short": "GOL Linhas Aereas"
+                },
+                "airport": {
+                    "origin": {
+                        "code": {
+                            "iata": "MCZ",
+                            "icao": "SBMO"
+                        },
+                        "timezone": {
+                            "name": "America/Maceio",
+                            "offset": -10800,
+                            "abbr": "-03",
+                            "abbrName": null,
+                            "isDst": false
+                        },
+                        "info": {
+                            "terminal": "T1",
+                            "baggage": null,
+                            "gate": "11"
+                        },
+                        "name": "Maceio Zumbi dos Palmares International Airport",
+                        "position": {
+                            "latitude": -9.5108,
+                            "longitude": -35.791599,
+                            "country": {
+                                "name": "Brazil",
+                                "code": "BR",
+                                "id": 32
+                            },
+                            "region": {
+                                "city": "Maceio"
+                            }
+                        },
+                        "visible": true
+                    },
+                    "destination": {
+                        "timezone": {
+                            "name": "America/Sao_Paulo",
+                            "offset": -10800,
+                            "abbr": "-03",
+                            "abbrName": null,
+                            "isDst": false
+                        },
+                        "info": {
+                            "terminal": null,
+                            "baggage": null,
+                            "gate": null
+                        }
+                    },
+                    "real": null
+                },
+                "time": {
+                    "scheduled": {
+                        "departure": 1754375700,
+                        "arrival": 1754386800
+                    },
+                    "real": {
+                        "departure": null,
+                        "arrival": null
+                    },
+                    "estimated": {
+                        "departure": 1754375700,
+                        "arrival": null
+                    },
+                    "other": {
+                        "eta": null,
+                        "duration": null
+                    }
+                }
+            }
+        },
+        {
+            "flight": {
+                "identification": {
+                    "id": null,
+                    "row": 5693784698,
+                    "number": {
+                        "default": "LA3623",
+                        "alternative": "JJ3623"
+                    },
+                    "callsign": null,
+                    "codeshare": null
+                },
+                "status": {
+                    "live": false,
+                    "text": "Scheduled",
+                    "icon": null,
+                    "estimated": null,
+                    "ambiguous": false,
+                    "generic": {
+                        "status": {
+                            "text": "scheduled",
+                            "type": "arrival",
+                            "color": "gray",
+                            "diverted": null
+                        },
+                        "eventTime": {
+                            "utc": null,
+                            "local": null
+                        }
+                    }
+                },
+                "aircraft": {
+                    "model": {
+                        "code": "A320",
+                        "text": "Airbus A320-214"
+                    },
+                    "registration": "PR-MYP",
+                    "country": {
+                        "id": 32,
+                        "name": "Brazil",
+                        "alpha2": "BR",
+                        "alpha3": "BRA"
+                    },
+                    "hex": "E48B65",
+                    "restricted": false,
+                    "serialNo": null,
+                    "age": {
+                        "availability": true
+                    },
+                    "availability": {
+                        "serialNo": true,
+                        "age": true
+                    }
+                },
+                "owner": {
+                    "name": "LATAM Brasil",
+                    "code": {
+                        "iata": "JJ",
+                        "icao": "TAM"
+                    },
+                    "logo": "https://cdn.flightradar24.com/assets/airlines/logotypes/55.png"
+                },
+                "airline": {
+                    "name": "LATAM Airlines",
+                    "code": {
+                        "iata": "LA",
+                        "icao": "LAN"
+                    },
+                    "short": "LATAM Airlines"
+                },
+                "airport": {
+                    "origin": {
+                        "code": {
+                            "iata": "SSA",
+                            "icao": "SBSV"
+                        },
+                        "timezone": {
+                            "name": "America/Bahia",
+                            "offset": -10800,
+                            "abbr": "-03",
+                            "abbrName": null,
+                            "isDst": false
+                        },
+                        "info": {
+                            "terminal": "1",
+                            "baggage": null,
+                            "gate": "11"
+                        },
+                        "name": "Salvador International Airport",
+                        "position": {
+                            "latitude": -12.910105,
+                            "longitude": -38.329971,
+                            "country": {
+                                "name": "Brazil",
+                                "code": "BR",
+                                "id": 32
+                            },
+                            "region": {
+                                "city": "Salvador"
+                            }
+                        },
+                        "visible": true
+                    },
+                    "destination": {
+                        "timezone": {
+                            "name": "America/Sao_Paulo",
+                            "offset": -10800,
+                            "abbr": "-03",
+                            "abbrName": null,
+                            "isDst": false
+                        },
+                        "info": {
+                            "terminal": "1",
+                            "baggage": null,
+                            "gate": "11"
+                        }
+                    },
+                    "real": null
+                },
+                "time": {
+                    "scheduled": {
+                        "departure": 1754377500,
+                        "arrival": 1754386800
+                    },
+                    "real": {
+                        "departure": null,
+                        "arrival": null
+                    },
+                    "estimated": {
+                        "departure": 1754378460,
+                        "arrival": null
+                    },
+                    "other": {
+                        "eta": null,
+                        "duration": null
+                    }
+                }
+            }
+        },
+        {
+            "flight": {
+                "identification": {
+                    "id": null,
+                    "row": 5693785710,
+                    "number": {
+                        "default": "LA4613",
+                        "alternative": "JJ4613"
+                    },
+                    "callsign": null,
+                    "codeshare": [
+                        "TP5707"
+                    ]
+                },
+                "status": {
+                    "live": false,
+                    "text": "Scheduled",
+                    "icon": null,
+                    "estimated": null,
+                    "ambiguous": false,
+                    "generic": {
+                        "status": {
+                            "text": "scheduled",
+                            "type": "arrival",
+                            "color": "gray",
+                            "diverted": null
+                        },
+                        "eventTime": {
+                            "utc": null,
+                            "local": null
+                        }
+                    }
+                },
+                "aircraft": {
+                    "model": {
+                        "code": "A319",
+                        "text": "Airbus A319-112"
+                    },
+                    "registration": "PT-TPA",
+                    "country": {
+                        "id": 32,
+                        "name": "Brazil",
+                        "alpha2": "BR",
+                        "alpha3": "BRA"
+                    },
+                    "hex": "E49907",
+                    "restricted": false,
+                    "serialNo": null,
+                    "age": {
+                        "availability": true
+                    },
+                    "availability": {
+                        "serialNo": true,
+                        "age": true
+                    }
+                },
+                "owner": {
+                    "name": "LATAM Brasil",
+                    "code": {
+                        "iata": "JJ",
+                        "icao": "TAM"
+                    },
+                    "logo": "https://cdn.flightradar24.com/assets/airlines/logotypes/55.png"
+                },
+                "airline": {
+                    "name": "LATAM Airlines",
+                    "code": {
+                        "iata": "LA",
+                        "icao": "LAN"
+                    },
+                    "short": "LATAM Airlines"
+                },
+                "airport": {
+                    "origin": {
+                        "code": {
+                            "iata": "FOR",
+                            "icao": "SBFZ"
+                        },
+                        "timezone": {
+                            "name": "America/Fortaleza",
+                            "offset": -10800,
+                            "abbr": "-03",
+                            "abbrName": null,
+                            "isDst": false
+                        },
+                        "info": {
+                            "terminal": "1",
+                            "baggage": null,
+                            "gate": "7"
+                        },
+                        "name": "Fortaleza Pinto Martins International Airport",
+                        "position": {
+                            "latitude": -3.77628,
+                            "longitude": -38.532501,
+                            "country": {
+                                "name": "Brazil",
+                                "code": "BR",
+                                "id": 32
+                            },
+                            "region": {
+                                "city": "Fortaleza"
+                            }
+                        },
+                        "visible": true
+                    },
+                    "destination": {
+                        "timezone": {
+                            "name": "America/Sao_Paulo",
+                            "offset": -10800,
+                            "abbr": "-03",
+                            "abbrName": null,
+                            "isDst": false
+                        },
+                        "info": {
+                            "terminal": "1",
+                            "baggage": null,
+                            "gate": "19"
+                        }
+                    },
+                    "real": null
+                },
+                "time": {
+                    "scheduled": {
+                        "departure": 1754373600,
+                        "arrival": 1754386800
+                    },
+                    "real": {
+                        "departure": null,
+                        "arrival": null
+                    },
+                    "estimated": {
+                        "departure": 1754374380,
+                        "arrival": null
+                    },
+                    "other": {
+                        "eta": null,
+                        "duration": null
+                    }
+                }
+            }
+        },
+        {
+            "flight": {
+                "identification": {
+                    "id": null,
+                    "row": 5693783531,
+                    "number": {
+                        "default": "LA3149",
+                        "alternative": "JJ3149"
+                    },
+                    "callsign": null,
+                    "codeshare": [
+                        "AR8357"
+                    ]
+                },
+                "status": {
+                    "live": false,
+                    "text": "Scheduled",
+                    "icon": null,
+                    "estimated": null,
+                    "ambiguous": false,
+                    "generic": {
+                        "status": {
+                            "text": "scheduled",
+                            "type": "arrival",
+                            "color": "gray",
+                            "diverted": null
+                        },
+                        "eventTime": {
+                            "utc": null,
+                            "local": null
+                        }
+                    }
+                },
+                "aircraft": {
+                    "model": {
+                        "code": "A320",
+                        "text": "Airbus A320-214"
+                    },
+                    "registration": "PR-MYJ",
+                    "country": {
+                        "id": 32,
+                        "name": "Brazil",
+                        "alpha2": "BR",
+                        "alpha3": "BRA"
+                    },
+                    "hex": "E486C3",
+                    "restricted": false,
+                    "serialNo": null,
+                    "age": {
+                        "availability": true
+                    },
+                    "availability": {
+                        "serialNo": true,
+                        "age": true
+                    }
+                },
+                "owner": {
+                    "name": "LATAM Brasil",
+                    "code": {
+                        "iata": "JJ",
+                        "icao": "TAM"
+                    },
+                    "logo": "https://cdn.flightradar24.com/assets/airlines/logotypes/55.png"
+                },
+                "airline": {
+                    "name": "LATAM Airlines",
+                    "code": {
+                        "iata": "LA",
+                        "icao": "LAN"
+                    },
+                    "short": "LATAM Airlines"
+                },
+                "airport": {
+                    "origin": {
+                        "code": {
+                            "iata": "POA",
+                            "icao": "SBPA"
+                        },
+                        "timezone": {
+                            "name": "America/Sao_Paulo",
+                            "offset": -10800,
+                            "abbr": "-03",
+                            "abbrName": null,
+                            "isDst": false
+                        },
+                        "info": {
+                            "terminal": "1",
+                            "baggage": null,
+                            "gate": "105"
+                        },
+                        "name": "Porto Alegre Salgado Filho International Airport",
+                        "position": {
+                            "latitude": -29.994587,
+                            "longitude": -51.171398,
+                            "country": {
+                                "name": "Brazil",
+                                "code": "BR",
+                                "id": 32
+                            },
+                            "region": {
+                                "city": "Porto Alegre"
+                            }
+                        },
+                        "visible": true
+                    },
+                    "destination": {
+                        "timezone": {
+                            "name": "America/Sao_Paulo",
+                            "offset": -10800,
+                            "abbr": "-03",
+                            "abbrName": null,
+                            "isDst": false
+                        },
+                        "info": {
+                            "terminal": "1",
+                            "baggage": null,
+                            "gate": "5"
+                        }
+                    },
+                    "real": null
+                },
+                "time": {
+                    "scheduled": {
+                        "departure": 1754381400,
+                        "arrival": 1754387100
+                    },
+                    "real": {
+                        "departure": null,
+                        "arrival": null
+                    },
+                    "estimated": {
+                        "departure": 1754382060,
+                        "arrival": null
+                    },
+                    "other": {
+                        "eta": null,
+                        "duration": null
+                    }
+                }
+            }
+        },
+        {
+            "flight": {
+                "identification": {
+                    "id": null,
+                    "row": 5693785586,
+                    "number": {
+                        "default": "LA4527",
+                        "alternative": "JJ4527"
+                    },
+                    "callsign": null,
+                    "codeshare": null
+                },
+                "status": {
+                    "live": false,
+                    "text": "Scheduled",
+                    "icon": null,
+                    "estimated": null,
+                    "ambiguous": false,
+                    "generic": {
+                        "status": {
+                            "text": "scheduled",
+                            "type": "arrival",
+                            "color": "gray",
+                            "diverted": null
+                        },
+                        "eventTime": {
+                            "utc": null,
+                            "local": null
+                        }
+                    }
+                },
+                "aircraft": {
+                    "model": {
+                        "code": "A320",
+                        "text": "Airbus A320-214"
+                    },
+                    "registration": "PR-MHM",
+                    "country": {
+                        "id": 32,
+                        "name": "Brazil",
+                        "alpha2": "BR",
+                        "alpha3": "BRA"
+                    },
+                    "hex": "E480A2",
+                    "restricted": false,
+                    "serialNo": null,
+                    "age": {
+                        "availability": true
+                    },
+                    "availability": {
+                        "serialNo": true,
+                        "age": true
+                    }
+                },
+                "owner": {
+                    "name": "LATAM Brasil",
+                    "code": {
+                        "iata": "JJ",
+                        "icao": "TAM"
+                    },
+                    "logo": "https://cdn.flightradar24.com/assets/airlines/logotypes/55.png"
+                },
+                "airline": {
+                    "name": "LATAM Airlines",
+                    "code": {
+                        "iata": "LA",
+                        "icao": "LAN"
+                    },
+                    "short": "LATAM Airlines"
+                },
+                "airport": {
+                    "origin": {
+                        "code": {
+                            "iata": "BSB",
+                            "icao": "SBBR"
+                        },
+                        "timezone": {
+                            "name": "America/Sao_Paulo",
+                            "offset": -10800,
+                            "abbr": "-03",
+                            "abbrName": null,
+                            "isDst": false
+                        },
+                        "info": {
+                            "terminal": "1",
+                            "baggage": null,
+                            "gate": "46"
+                        },
+                        "name": "Brasilia International Airport",
+                        "position": {
+                            "latitude": -15.8711,
+                            "longitude": -47.918598,
+                            "country": {
+                                "name": "Brazil",
+                                "code": "BR",
+                                "id": 32
+                            },
+                            "region": {
+                                "city": "Brasilia"
+                            }
+                        },
+                        "visible": true
+                    },
+                    "destination": {
+                        "timezone": {
+                            "name": "America/Sao_Paulo",
+                            "offset": -10800,
+                            "abbr": "-03",
+                            "abbrName": null,
+                            "isDst": false
+                        },
+                        "info": {
+                            "terminal": "1",
+                            "baggage": null,
+                            "gate": "6"
+                        }
+                    },
+                    "real": null
+                },
+                "time": {
+                    "scheduled": {
+                        "departure": 1754380800,
+                        "arrival": 1754387100
+                    },
+                    "real": {
+                        "departure": null,
+                        "arrival": null
+                    },
+                    "estimated": {
+                        "departure": 1754381760,
+                        "arrival": null
+                    },
+                    "other": {
+                        "eta": null,
+                        "duration": null
+                    }
+                }
+            }
+        },
+        {
+            "flight": {
+                "identification": {
+                    "id": null,
+                    "row": 5693664994,
+                    "number": {
+                        "default": "AD4716",
+                        "alternative": null
+                    },
+                    "callsign": null,
+                    "codeshare": null
+                },
+                "status": {
+                    "live": false,
+                    "text": "Scheduled",
+                    "icon": null,
+                    "estimated": null,
+                    "ambiguous": false,
+                    "generic": {
+                        "status": {
+                            "text": "scheduled",
+                            "type": "arrival",
+                            "color": "gray",
+                            "diverted": null
+                        },
+                        "eventTime": {
+                            "utc": null,
+                            "local": null
+                        }
+                    }
+                },
+                "aircraft": {
+                    "model": {
+                        "code": "A20N",
+                        "text": "Airbus A320-253N"
+                    },
+                    "registration": "PR-YRO",
+                    "country": {
+                        "id": 32,
+                        "name": "Brazil",
+                        "alpha2": "BR",
+                        "alpha3": "BRA"
+                    },
+                    "hex": "E493C5",
+                    "restricted": false,
+                    "serialNo": null,
+                    "age": {
+                        "availability": true
+                    },
+                    "availability": {
+                        "serialNo": true,
+                        "age": true
+                    }
+                },
+                "owner": {
+                    "name": "Azul",
+                    "code": {
+                        "iata": "AD",
+                        "icao": "AZU"
+                    },
+                    "logo": "https://cdn.flightradar24.com/assets/airlines/logotypes/724.png"
+                },
+                "airline": {
+                    "name": "Azul",
+                    "code": {
+                        "iata": "AD",
+                        "icao": "AZU"
+                    },
+                    "short": "Azul"
+                },
+                "airport": {
+                    "origin": {
+                        "code": {
+                            "iata": "REC",
+                            "icao": "SBRF"
+                        },
+                        "timezone": {
+                            "name": "America/Recife",
+                            "offset": -10800,
+                            "abbr": "-03",
+                            "abbrName": null,
+                            "isDst": false
+                        },
+                        "info": {
+                            "terminal": null,
+                            "baggage": null,
+                            "gate": "19"
+                        },
+                        "name": "Recife Airport",
+                        "position": {
+                            "latitude": -8.12679,
+                            "longitude": -34.923,
+                            "country": {
+                                "name": "Brazil",
+                                "code": "BR",
+                                "id": 32
+                            },
+                            "region": {
+                                "city": "Recife"
+                            }
+                        },
+                        "visible": true
+                    },
+                    "destination": {
+                        "timezone": {
+                            "name": "America/Sao_Paulo",
+                            "offset": -10800,
+                            "abbr": "-03",
+                            "abbrName": null,
+                            "isDst": false
+                        },
+                        "info": {
+                            "terminal": null,
+                            "baggage": null,
+                            "gate": null
+                        }
+                    },
+                    "real": null
+                },
+                "time": {
+                    "scheduled": {
+                        "departure": 1754375400,
+                        "arrival": 1754387400
+                    },
+                    "real": {
+                        "departure": null,
+                        "arrival": null
+                    },
+                    "estimated": {
+                        "departure": 1754375400,
+                        "arrival": null
+                    },
+                    "other": {
+                        "eta": null,
+                        "duration": null
+                    }
+                }
+            }
+        }
+    ],
+    "departures": [
+        {
+            "flight": {
+                "identification": {
+                    "id": null,
+                    "row": 5693751913,
+                    "number": {
+                        "default": "G31402",
+                        "alternative": null
+                    },
+                    "callsign": null,
+                    "codeshare": null
+                },
+                "status": {
+                    "live": false,
+                    "text": "Estimated dep 06:00",
+                    "icon": "green",
+                    "estimated": null,
+                    "ambiguous": false,
+                    "generic": {
+                        "status": {
+                            "text": "estimated",
+                            "type": "departure",
+                            "color": "green",
+                            "diverted": null
+                        },
+                        "eventTime": {
+                            "utc": 1754384400,
+                            "local": 1754373600
+                        }
+                    }
+                },
+                "aircraft": {
+                    "model": {
+                        "code": "7M8",
+                        "text": ""
+                    },
+                    "hex": "",
+                    "registration": "",
+                    "serialNo": "",
+                    "images": null
+                },
+                "owner": null,
+                "airline": {
+                    "name": "GOL Linhas Aereas",
+                    "code": {
+                        "iata": "G3",
+                        "icao": "GLO"
+                    },
+                    "short": "GOL Linhas Aereas"
+                },
+                "airport": {
+                    "origin": {
+                        "timezone": {
+                            "name": "America/Sao_Paulo",
+                            "offset": -10800,
+                            "abbr": "-03",
+                            "abbrName": null,
+                            "isDst": false
+                        },
+                        "info": {
+                            "terminal": null,
+                            "baggage": null,
+                            "gate": null
+                        }
+                    },
+                    "destination": {
+                        "code": {
+                            "iata": "BSB",
+                            "icao": "SBBR"
+                        },
+                        "timezone": {
+                            "name": "America/Sao_Paulo",
+                            "offset": -10800,
+                            "abbr": "-03",
+                            "abbrName": null,
+                            "isDst": false
+                        },
+                        "info": {
+                            "terminal": null,
+                            "baggage": null,
+                            "gate": null
+                        },
+                        "name": "Brasilia International Airport",
+                        "position": {
+                            "latitude": -15.8711,
+                            "longitude": -47.918598,
+                            "country": {
+                                "name": "Brazil",
+                                "code": "BR",
+                                "id": 32
+                            },
+                            "region": {
+                                "city": "Brasilia"
+                            }
+                        },
+                        "visible": true
+                    },
+                    "real": null
+                },
+                "time": {
+                    "scheduled": {
+                        "departure": 1754384400,
+                        "arrival": 1754391300
+                    },
+                    "real": {
+                        "departure": null,
+                        "arrival": null
+                    },
+                    "estimated": {
+                        "departure": 1754384400,
+                        "arrival": null
+                    },
+                    "other": {
+                        "eta": null,
+                        "duration": null
+                    }
+                }
+            }
+        },
+        {
+            "flight": {
+                "identification": {
+                    "id": null,
+                    "row": 5693752323,
+                    "number": {
+                        "default": "G31594",
+                        "alternative": null
+                    },
+                    "callsign": null,
+                    "codeshare": null
+                },
+                "status": {
+                    "live": false,
+                    "text": "Estimated dep 06:00",
+                    "icon": "green",
+                    "estimated": null,
+                    "ambiguous": false,
+                    "generic": {
+                        "status": {
+                            "text": "estimated",
+                            "type": "departure",
+                            "color": "green",
+                            "diverted": null
+                        },
+                        "eventTime": {
+                            "utc": 1754384400,
+                            "local": 1754373600
+                        }
+                    }
+                },
+                "aircraft": {
+                    "model": {
+                        "code": "738",
+                        "text": ""
+                    },
+                    "hex": "",
+                    "registration": "",
+                    "serialNo": "",
+                    "images": null
+                },
+                "owner": null,
+                "airline": {
+                    "name": "GOL Linhas Aereas",
+                    "code": {
+                        "iata": "G3",
+                        "icao": "GLO"
+                    },
+                    "short": "GOL Linhas Aereas"
+                },
+                "airport": {
+                    "origin": {
+                        "timezone": {
+                            "name": "America/Sao_Paulo",
+                            "offset": -10800,
+                            "abbr": "-03",
+                            "abbrName": null,
+                            "isDst": false
+                        },
+                        "info": {
+                            "terminal": null,
+                            "baggage": null,
+                            "gate": null
+                        }
+                    },
+                    "destination": {
+                        "code": {
+                            "iata": "SSA",
+                            "icao": "SBSV"
+                        },
+                        "timezone": {
+                            "name": "America/Bahia",
+                            "offset": -10800,
+                            "abbr": "-03",
+                            "abbrName": null,
+                            "isDst": false
+                        },
+                        "info": {
+                            "terminal": null,
+                            "baggage": null,
+                            "gate": null
+                        },
+                        "name": "Salvador International Airport",
+                        "position": {
+                            "latitude": -12.910105,
+                            "longitude": -38.329971,
+                            "country": {
+                                "name": "Brazil",
+                                "code": "BR",
+                                "id": 32
+                            },
+                            "region": {
+                                "city": "Salvador"
+                            }
+                        },
+                        "visible": true
+                    },
+                    "real": null
+                },
+                "time": {
+                    "scheduled": {
+                        "departure": 1754384400,
+                        "arrival": 1754392800
+                    },
+                    "real": {
+                        "departure": null,
+                        "arrival": null
+                    },
+                    "estimated": {
+                        "departure": 1754384400,
+                        "arrival": null
+                    },
+                    "other": {
+                        "eta": null,
+                        "duration": null
+                    }
+                }
+            }
+        },
+        {
+            "flight": {
+                "identification": {
+                    "id": null,
+                    "row": 5693783369,
+                    "number": {
+                        "default": "LA3000",
+                        "alternative": "JJ3000"
+                    },
+                    "callsign": null,
+                    "codeshare": null
+                },
+                "status": {
+                    "live": false,
+                    "text": "Estimated dep 06:15",
+                    "icon": "green",
+                    "estimated": null,
+                    "ambiguous": false,
+                    "generic": {
+                        "status": {
+                            "text": "estimated",
+                            "type": "departure",
+                            "color": "green",
+                            "diverted": null
+                        },
+                        "eventTime": {
+                            "utc": 1754385300,
+                            "local": 1754374500
+                        }
+                    }
+                },
+                "aircraft": {
+                    "model": {
+                        "code": "A320",
+                        "text": "Airbus A320-214"
+                    },
+                    "registration": "PR-MHG",
+                    "country": {
+                        "id": 32,
+                        "name": "Brazil",
+                        "alpha2": "BR",
+                        "alpha3": "BRA"
+                    },
+                    "hex": "E4803D",
+                    "restricted": false,
+                    "serialNo": null,
+                    "age": {
+                        "availability": true
+                    },
+                    "availability": {
+                        "serialNo": true,
+                        "age": true
+                    }
+                },
+                "owner": {
+                    "name": "LATAM Brasil",
+                    "code": {
+                        "iata": "JJ",
+                        "icao": "TAM"
+                    },
+                    "logo": "https://cdn.flightradar24.com/assets/airlines/logotypes/55.png"
+                },
+                "airline": {
+                    "name": "LATAM Airlines",
+                    "code": {
+                        "iata": "LA",
+                        "icao": "LAN"
+                    },
+                    "short": "LATAM Airlines"
+                },
+                "airport": {
+                    "origin": {
+                        "timezone": {
+                            "name": "America/Sao_Paulo",
+                            "offset": -10800,
+                            "abbr": "-03",
+                            "abbrName": null,
+                            "isDst": false
+                        },
+                        "info": {
+                            "terminal": "1",
+                            "baggage": null,
+                            "gate": null
+                        }
+                    },
+                    "destination": {
+                        "code": {
+                            "iata": "BSB",
+                            "icao": "SBBR"
+                        },
+                        "timezone": {
+                            "name": "America/Sao_Paulo",
+                            "offset": -10800,
+                            "abbr": "-03",
+                            "abbrName": null,
+                            "isDst": false
+                        },
+                        "info": {
+                            "terminal": null,
+                            "baggage": null,
+                            "gate": null
+                        },
+                        "name": "Brasilia International Airport",
+                        "position": {
+                            "latitude": -15.8711,
+                            "longitude": -47.918598,
+                            "country": {
+                                "name": "Brazil",
+                                "code": "BR",
+                                "id": 32
+                            },
+                            "region": {
+                                "city": "Brasilia"
+                            }
+                        },
+                        "visible": true
+                    },
+                    "real": null
+                },
+                "time": {
+                    "scheduled": {
+                        "departure": 1754384400,
+                        "arrival": 1754391000
+                    },
+                    "real": {
+                        "departure": null,
+                        "arrival": null
+                    },
+                    "estimated": {
+                        "departure": 1754385300,
+                        "arrival": null
+                    },
+                    "other": {
+                        "eta": null,
+                        "duration": null
+                    }
+                }
+            }
+        },
+        {
+            "flight": {
+                "identification": {
+                    "id": null,
+                    "row": 5693664410,
+                    "number": {
+                        "default": "AD4030",
+                        "alternative": null
+                    },
+                    "callsign": null,
+                    "codeshare": null
+                },
+                "status": {
+                    "live": false,
+                    "text": "Estimated dep 06:05",
+                    "icon": "green",
+                    "estimated": null,
+                    "ambiguous": false,
+                    "generic": {
+                        "status": {
+                            "text": "estimated",
+                            "type": "departure",
+                            "color": "green",
+                            "diverted": null
+                        },
+                        "eventTime": {
+                            "utc": 1754384700,
+                            "local": 1754373900
+                        }
+                    }
+                },
+                "aircraft": {
+                    "model": {
+                        "code": "A20N",
+                        "text": "Airbus A320-253N"
+                    },
+                    "registration": "PR-YRJ",
+                    "country": {
+                        "id": 32,
+                        "name": "Brazil",
+                        "alpha2": "BR",
+                        "alpha3": "BRA"
+                    },
+                    "hex": "E49368",
+                    "restricted": false,
+                    "serialNo": null,
+                    "age": {
+                        "availability": true
+                    },
+                    "availability": {
+                        "serialNo": true,
+                        "age": true
+                    }
+                },
+                "owner": {
+                    "name": "Azul",
+                    "code": {
+                        "iata": "AD",
+                        "icao": "AZU"
+                    },
+                    "logo": "https://cdn.flightradar24.com/assets/airlines/logotypes/724.png"
+                },
+                "airline": {
+                    "name": "Azul",
+                    "code": {
+                        "iata": "AD",
+                        "icao": "AZU"
+                    },
+                    "short": "Azul"
+                },
+                "airport": {
+                    "origin": {
+                        "timezone": {
+                            "name": "America/Sao_Paulo",
+                            "offset": -10800,
+                            "abbr": "-03",
+                            "abbrName": null,
+                            "isDst": false
+                        },
+                        "info": {
+                            "terminal": null,
+                            "baggage": null,
+                            "gate": null
+                        }
+                    },
+                    "destination": {
+                        "code": {
+                            "iata": "CNF",
+                            "icao": "SBCF"
+                        },
+                        "timezone": {
+                            "name": "America/Sao_Paulo",
+                            "offset": -10800,
+                            "abbr": "-03",
+                            "abbrName": null,
+                            "isDst": false
+                        },
+                        "info": {
+                            "terminal": null,
+                            "baggage": null,
+                            "gate": "204"
+                        },
+                        "name": "Belo Horizonte Tancredo Neves International Airport",
+                        "position": {
+                            "latitude": -19.634266,
+                            "longitude": -43.968307,
+                            "country": {
+                                "name": "Brazil",
+                                "code": "BR",
+                                "id": 32
+                            },
+                            "region": {
+                                "city": "Belo Horizonte"
+                            }
+                        },
+                        "visible": true
+                    },
+                    "real": null
+                },
+                "time": {
+                    "scheduled": {
+                        "departure": 1754384700,
+                        "arrival": 1754389200
+                    },
+                    "real": {
+                        "departure": null,
+                        "arrival": null
+                    },
+                    "estimated": {
+                        "departure": 1754384700,
+                        "arrival": null
+                    },
+                    "other": {
+                        "eta": null,
+                        "duration": null
+                    }
+                }
+            }
+        },
+        {
+            "flight": {
+                "identification": {
+                    "id": null,
+                    "row": 5693751276,
+                    "number": {
+                        "default": "G31002",
+                        "alternative": null
+                    },
+                    "callsign": null,
+                    "codeshare": null
+                },
+                "status": {
+                    "live": false,
+                    "text": "Estimated dep 06:05",
+                    "icon": "green",
+                    "estimated": null,
+                    "ambiguous": false,
+                    "generic": {
+                        "status": {
+                            "text": "estimated",
+                            "type": "departure",
+                            "color": "green",
+                            "diverted": null
+                        },
+                        "eventTime": {
+                            "utc": 1754384700,
+                            "local": 1754373900
+                        }
+                    }
+                },
+                "aircraft": {
+                    "model": {
+                        "code": "738",
+                        "text": ""
+                    },
+                    "hex": "",
+                    "registration": "",
+                    "serialNo": "",
+                    "images": null
+                },
+                "owner": null,
+                "airline": {
+                    "name": "GOL Linhas Aereas",
+                    "code": {
+                        "iata": "G3",
+                        "icao": "GLO"
+                    },
+                    "short": "GOL Linhas Aereas"
+                },
+                "airport": {
+                    "origin": {
+                        "timezone": {
+                            "name": "America/Sao_Paulo",
+                            "offset": -10800,
+                            "abbr": "-03",
+                            "abbrName": null,
+                            "isDst": false
+                        },
+                        "info": {
+                            "terminal": null,
+                            "baggage": null,
+                            "gate": null
+                        }
+                    },
+                    "destination": {
+                        "code": {
+                            "iata": "SDU",
+                            "icao": "SBRJ"
+                        },
+                        "timezone": {
+                            "name": "America/Sao_Paulo",
+                            "offset": -10800,
+                            "abbr": "-03",
+                            "abbrName": null,
+                            "isDst": false
+                        },
+                        "info": {
+                            "terminal": null,
+                            "baggage": "02",
+                            "gate": null
+                        },
+                        "name": "Rio de Janeiro Santos Dumont",
+                        "position": {
+                            "latitude": -22.9104,
+                            "longitude": -43.163101,
+                            "country": {
+                                "name": "Brazil",
+                                "code": "BR",
+                                "id": 32
+                            },
+                            "region": {
+                                "city": "Rio de Janeiro"
+                            }
+                        },
+                        "visible": true
+                    },
+                    "real": null
+                },
+                "time": {
+                    "scheduled": {
+                        "departure": 1754384700,
+                        "arrival": 1754388300
+                    },
+                    "real": {
+                        "departure": null,
+                        "arrival": null
+                    },
+                    "estimated": {
+                        "departure": 1754384700,
+                        "arrival": null
+                    },
+                    "other": {
+                        "eta": null,
+                        "duration": null
+                    }
+                }
+            }
+        },
+        {
+            "flight": {
+                "identification": {
+                    "id": null,
+                    "row": 5693783437,
+                    "number": {
+                        "default": "LA3056",
+                        "alternative": "JJ3056"
+                    },
+                    "callsign": null,
+                    "codeshare": [
+                        "AR8372"
+                    ]
+                },
+                "status": {
+                    "live": false,
+                    "text": "Estimated dep 06:25",
+                    "icon": "green",
+                    "estimated": null,
+                    "ambiguous": false,
+                    "generic": {
+                        "status": {
+                            "text": "estimated",
+                            "type": "departure",
+                            "color": "green",
+                            "diverted": null
+                        },
+                        "eventTime": {
+                            "utc": 1754385900,
+                            "local": 1754375100
+                        }
+                    }
+                },
+                "aircraft": {
+                    "model": {
+                        "code": "A320",
+                        "text": "Airbus A320-214"
+                    },
+                    "registration": "PR-MYY",
+                    "country": {
+                        "id": 32,
+                        "name": "Brazil",
+                        "alpha2": "BR",
+                        "alpha3": "BRA"
+                    },
+                    "hex": "E48DC1",
+                    "restricted": false,
+                    "serialNo": null,
+                    "age": {
+                        "availability": true
+                    },
+                    "availability": {
+                        "serialNo": true,
+                        "age": true
+                    }
+                },
+                "owner": {
+                    "name": "LATAM Brasil",
+                    "code": {
+                        "iata": "JJ",
+                        "icao": "TAM"
+                    },
+                    "logo": "https://cdn.flightradar24.com/assets/airlines/logotypes/55.png"
+                },
+                "airline": {
+                    "name": "LATAM Airlines",
+                    "code": {
+                        "iata": "LA",
+                        "icao": "LAN"
+                    },
+                    "short": "LATAM Airlines"
+                },
+                "airport": {
+                    "origin": {
+                        "timezone": {
+                            "name": "America/Sao_Paulo",
+                            "offset": -10800,
+                            "abbr": "-03",
+                            "abbrName": null,
+                            "isDst": false
+                        },
+                        "info": {
+                            "terminal": "1",
+                            "baggage": null,
+                            "gate": null
+                        }
+                    },
+                    "destination": {
+                        "code": {
+                            "iata": "CWB",
+                            "icao": "SBCT"
+                        },
+                        "timezone": {
+                            "name": "America/Sao_Paulo",
+                            "offset": -10800,
+                            "abbr": "-03",
+                            "abbrName": null,
+                            "isDst": false
+                        },
+                        "info": {
+                            "terminal": null,
+                            "baggage": null,
+                            "gate": null
+                        },
+                        "name": "Curitiba Afonso Pena International Airport",
+                        "position": {
+                            "latitude": -25.5284,
+                            "longitude": -49.175701,
+                            "country": {
+                                "name": "Brazil",
+                                "code": "BR",
+                                "id": 32
+                            },
+                            "region": {
+                                "city": "Curitiba"
+                            }
+                        },
+                        "visible": true
+                    },
+                    "real": null
+                },
+                "time": {
+                    "scheduled": {
+                        "departure": 1754385000,
+                        "arrival": 1754388600
+                    },
+                    "real": {
+                        "departure": null,
+                        "arrival": null
+                    },
+                    "estimated": {
+                        "departure": 1754385900,
+                        "arrival": null
+                    },
+                    "other": {
+                        "eta": null,
+                        "duration": null
+                    }
+                }
+            }
+        },
+        {
+            "flight": {
+                "identification": {
+                    "id": null,
+                    "row": 5693665340,
+                    "number": {
+                        "default": "AD6050",
+                        "alternative": null
+                    },
+                    "callsign": null,
+                    "codeshare": null
+                },
+                "status": {
+                    "live": false,
+                    "text": "Scheduled",
+                    "icon": null,
+                    "estimated": null,
+                    "ambiguous": false,
+                    "generic": {
+                        "status": {
+                            "text": "scheduled",
+                            "type": "departure",
+                            "color": "gray",
+                            "diverted": null
+                        },
+                        "eventTime": {
+                            "utc": null,
+                            "local": null
+                        }
+                    }
+                },
+                "aircraft": {
+                    "model": {
+                        "code": "E195",
+                        "text": "Embraer E195AR"
+                    },
+                    "registration": "PR-AXH",
+                    "country": {
+                        "id": 32,
+                        "name": "Brazil",
+                        "alpha2": "BR",
+                        "alpha3": "BRA"
+                    },
+                    "hex": "E48CEA",
+                    "restricted": false,
+                    "serialNo": null,
+                    "age": {
+                        "availability": true
+                    },
+                    "availability": {
+                        "serialNo": true,
+                        "age": true
+                    }
+                },
+                "owner": {
+                    "name": "Azul",
+                    "code": {
+                        "iata": "AD",
+                        "icao": "AZU"
+                    },
+                    "logo": "https://cdn.flightradar24.com/assets/airlines/logotypes/724.png"
+                },
+                "airline": {
+                    "name": "Azul (50 cities Livery)",
+                    "code": {
+                        "iata": "AD",
+                        "icao": "AZU"
+                    },
+                    "short": "Azul"
+                },
+                "airport": {
+                    "origin": {
+                        "timezone": {
+                            "name": "America/Sao_Paulo",
+                            "offset": -10800,
+                            "abbr": "-03",
+                            "abbrName": null,
+                            "isDst": false
+                        },
+                        "info": {
+                            "terminal": null,
+                            "baggage": null,
+                            "gate": null
+                        }
+                    },
+                    "destination": {
+                        "code": {
+                            "iata": "SDU",
+                            "icao": "SBRJ"
+                        },
+                        "timezone": {
+                            "name": "America/Sao_Paulo",
+                            "offset": -10800,
+                            "abbr": "-03",
+                            "abbrName": null,
+                            "isDst": false
+                        },
+                        "info": {
+                            "terminal": null,
+                            "baggage": "02",
+                            "gate": null
+                        },
+                        "name": "Rio de Janeiro Santos Dumont",
+                        "position": {
+                            "latitude": -22.9104,
+                            "longitude": -43.163101,
+                            "country": {
+                                "name": "Brazil",
+                                "code": "BR",
+                                "id": 32
+                            },
+                            "region": {
+                                "city": "Rio de Janeiro"
+                            }
+                        },
+                        "visible": true
+                    },
+                    "real": null
+                },
+                "time": {
+                    "scheduled": {
+                        "departure": 1754385300,
+                        "arrival": 1754388900
+                    },
+                    "real": {
+                        "departure": null,
+                        "arrival": null
+                    },
+                    "estimated": {
+                        "departure": null,
+                        "arrival": null
+                    },
+                    "other": {
+                        "eta": null,
+                        "duration": null
+                    }
+                }
+            }
+        },
+        {
+            "flight": {
+                "identification": {
+                    "id": null,
+                    "row": 5693783434,
+                    "number": {
+                        "default": "LA3052",
+                        "alternative": "JJ3052"
+                    },
+                    "callsign": null,
+                    "codeshare": null
+                },
+                "status": {
+                    "live": false,
+                    "text": "Estimated dep 06:30",
+                    "icon": "green",
+                    "estimated": null,
+                    "ambiguous": false,
+                    "generic": {
+                        "status": {
+                            "text": "estimated",
+                            "type": "departure",
+                            "color": "green",
+                            "diverted": null
+                        },
+                        "eventTime": {
+                            "utc": 1754386200,
+                            "local": 1754375400
+                        }
+                    }
+                },
+                "aircraft": {
+                    "model": {
+                        "code": "A320",
+                        "text": "Airbus A320-214"
+                    },
+                    "registration": "PR-TYU",
+                    "country": {
+                        "id": 32,
+                        "name": "Brazil",
+                        "alpha2": "BR",
+                        "alpha3": "BRA"
+                    },
+                    "hex": "E49221",
+                    "restricted": false,
+                    "serialNo": null,
+                    "age": {
+                        "availability": true
+                    },
+                    "availability": {
+                        "serialNo": true,
+                        "age": true
+                    }
+                },
+                "owner": {
+                    "name": "LATAM Brasil",
+                    "code": {
+                        "iata": "JJ",
+                        "icao": "TAM"
+                    },
+                    "logo": "https://cdn.flightradar24.com/assets/airlines/logotypes/55.png"
+                },
+                "airline": {
+                    "name": "LATAM Airlines",
+                    "code": {
+                        "iata": "LA",
+                        "icao": "LAN"
+                    },
+                    "short": "LATAM Airlines"
+                },
+                "airport": {
+                    "origin": {
+                        "timezone": {
+                            "name": "America/Sao_Paulo",
+                            "offset": -10800,
+                            "abbr": "-03",
+                            "abbrName": null,
+                            "isDst": false
+                        },
+                        "info": {
+                            "terminal": "1",
+                            "baggage": null,
+                            "gate": null
+                        }
+                    },
+                    "destination": {
+                        "code": {
+                            "iata": "CNF",
+                            "icao": "SBCF"
+                        },
+                        "timezone": {
+                            "name": "America/Sao_Paulo",
+                            "offset": -10800,
+                            "abbr": "-03",
+                            "abbrName": null,
+                            "isDst": false
+                        },
+                        "info": {
+                            "terminal": null,
+                            "baggage": null,
+                            "gate": "202"
+                        },
+                        "name": "Belo Horizonte Tancredo Neves International Airport",
+                        "position": {
+                            "latitude": -19.634266,
+                            "longitude": -43.968307,
+                            "country": {
+                                "name": "Brazil",
+                                "code": "BR",
+                                "id": 32
+                            },
+                            "region": {
+                                "city": "Belo Horizonte"
+                            }
+                        },
+                        "visible": true
+                    },
+                    "real": null
+                },
+                "time": {
+                    "scheduled": {
+                        "departure": 1754385300,
+                        "arrival": 1754389800
+                    },
+                    "real": {
+                        "departure": null,
+                        "arrival": null
+                    },
+                    "estimated": {
+                        "departure": 1754386200,
+                        "arrival": null
+                    },
+                    "other": {
+                        "eta": null,
+                        "duration": null
+                    }
+                }
+            }
+        },
+        {
+            "flight": {
+                "identification": {
+                    "id": null,
+                    "row": 5693785906,
+                    "number": {
+                        "default": "LA4732",
+                        "alternative": "JJ4732"
+                    },
+                    "callsign": null,
+                    "codeshare": null
+                },
+                "status": {
+                    "live": false,
+                    "text": "Estimated dep 06:30",
+                    "icon": "green",
+                    "estimated": null,
+                    "ambiguous": false,
+                    "generic": {
+                        "status": {
+                            "text": "estimated",
+                            "type": "departure",
+                            "color": "green",
+                            "diverted": null
+                        },
+                        "eventTime": {
+                            "utc": 1754386200,
+                            "local": 1754375400
+                        }
+                    }
+                },
+                "aircraft": {
+                    "model": {
+                        "code": "A20N",
+                        "text": "Airbus A320-271N"
+                    },
+                    "registration": "PR-XBV",
+                    "country": {
+                        "id": 32,
+                        "name": "Brazil",
+                        "alpha2": "BR",
+                        "alpha3": "BRA"
+                    },
+                    "hex": "E4A125",
+                    "restricted": false,
+                    "serialNo": null,
+                    "age": {
+                        "availability": true
+                    },
+                    "availability": {
+                        "serialNo": true,
+                        "age": true
+                    }
+                },
+                "owner": {
+                    "name": "LATAM Brasil",
+                    "code": {
+                        "iata": "JJ",
+                        "icao": "TAM"
+                    },
+                    "logo": "https://cdn.flightradar24.com/assets/airlines/logotypes/55.png"
+                },
+                "airline": {
+                    "name": "LATAM Airlines",
+                    "code": {
+                        "iata": "LA",
+                        "icao": "LAN"
+                    },
+                    "short": "LATAM Airlines"
+                },
+                "airport": {
+                    "origin": {
+                        "timezone": {
+                            "name": "America/Sao_Paulo",
+                            "offset": -10800,
+                            "abbr": "-03",
+                            "abbrName": null,
+                            "isDst": false
+                        },
+                        "info": {
+                            "terminal": "1",
+                            "baggage": null,
+                            "gate": null
+                        }
+                    },
+                    "destination": {
+                        "code": {
+                            "iata": "NAT",
+                            "icao": "SBSG"
+                        },
+                        "timezone": {
+                            "name": "America/Fortaleza",
+                            "offset": -10800,
+                            "abbr": "-03",
+                            "abbrName": null,
+                            "isDst": false
+                        },
+                        "info": {
+                            "terminal": null,
+                            "baggage": null,
+                            "gate": null
+                        },
+                        "name": "Natal International Airport",
+                        "position": {
+                            "latitude": -5.769593,
+                            "longitude": -35.368515,
+                            "country": {
+                                "name": "Brazil",
+                                "code": "BR",
+                                "id": 32
+                            },
+                            "region": {
+                                "city": "Natal"
+                            }
+                        },
+                        "visible": true
+                    },
+                    "real": null
+                },
+                "time": {
+                    "scheduled": {
+                        "departure": 1754385300,
+                        "arrival": 1754397300
+                    },
+                    "real": {
+                        "departure": null,
+                        "arrival": null
+                    },
+                    "estimated": {
+                        "departure": 1754386200,
+                        "arrival": null
+                    },
+                    "other": {
+                        "eta": null,
+                        "duration": null
+                    }
+                }
+            }
+        },
+        {
+            "flight": {
+                "identification": {
+                    "id": null,
+                    "row": 5693785020,
+                    "number": {
+                        "default": "LA3900",
+                        "alternative": "JJ3900"
+                    },
+                    "callsign": null,
+                    "codeshare": null
+                },
+                "status": {
+                    "live": false,
+                    "text": "Estimated dep 06:35",
+                    "icon": "green",
+                    "estimated": null,
+                    "ambiguous": false,
+                    "generic": {
+                        "status": {
+                            "text": "estimated",
+                            "type": "departure",
+                            "color": "green",
+                            "diverted": null
+                        },
+                        "eventTime": {
+                            "utc": 1754386500,
+                            "local": 1754375700
+                        }
+                    }
+                },
+                "aircraft": {
+                    "model": {
+                        "code": "A319",
+                        "text": "Airbus A319-132"
+                    },
+                    "registration": "PT-TMT",
+                    "country": {
+                        "id": 32,
+                        "name": "Brazil",
+                        "alpha2": "BR",
+                        "alpha3": "BRA"
+                    },
+                    "hex": "E4994D",
+                    "restricted": false,
+                    "serialNo": null,
+                    "age": {
+                        "availability": true
+                    },
+                    "availability": {
+                        "serialNo": true,
+                        "age": true
+                    }
+                },
+                "owner": {
+                    "name": "LATAM Brasil",
+                    "code": {
+                        "iata": "JJ",
+                        "icao": "TAM"
+                    },
+                    "logo": "https://cdn.flightradar24.com/assets/airlines/logotypes/55.png"
+                },
+                "airline": {
+                    "name": "LATAM Airlines",
+                    "code": {
+                        "iata": "LA",
+                        "icao": "LAN"
+                    },
+                    "short": "LATAM Airlines"
+                },
+                "airport": {
+                    "origin": {
+                        "timezone": {
+                            "name": "America/Sao_Paulo",
+                            "offset": -10800,
+                            "abbr": "-03",
+                            "abbrName": null,
+                            "isDst": false
+                        },
+                        "info": {
+                            "terminal": "1",
+                            "baggage": null,
+                            "gate": null
+                        }
+                    },
+                    "destination": {
+                        "code": {
+                            "iata": "SDU",
+                            "icao": "SBRJ"
+                        },
+                        "timezone": {
+                            "name": "America/Sao_Paulo",
+                            "offset": -10800,
+                            "abbr": "-03",
+                            "abbrName": null,
+                            "isDst": false
+                        },
+                        "info": {
+                            "terminal": null,
+                            "baggage": "01",
+                            "gate": null
+                        },
+                        "name": "Rio de Janeiro Santos Dumont",
+                        "position": {
+                            "latitude": -22.9104,
+                            "longitude": -43.163101,
+                            "country": {
+                                "name": "Brazil",
+                                "code": "BR",
+                                "id": 32
+                            },
+                            "region": {
+                                "city": "Rio de Janeiro"
+                            }
+                        },
+                        "visible": true
+                    },
+                    "real": null
+                },
+                "time": {
+                    "scheduled": {
+                        "departure": 1754385600,
+                        "arrival": 1754389200
+                    },
+                    "real": {
+                        "departure": null,
+                        "arrival": null
+                    },
+                    "estimated": {
+                        "departure": 1754386500,
+                        "arrival": null
+                    },
+                    "other": {
+                        "eta": null,
+                        "duration": null
+                    }
+                }
+            }
+        }
+    ]
+}
