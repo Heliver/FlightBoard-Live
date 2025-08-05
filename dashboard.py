@@ -24,7 +24,10 @@ STATUS_TRANSLATION = {
     'unknown': 'Status desconhecido'
 }
 
-# Estado global para armazenar os horários dos cards de destaque
+# --- Interface Principal ---
+st.set_page_config(page_title="Berenices da Sacada - Aeroporto", layout="wide")
+
+# Estado global
 st.session_state.setdefault('last_highlight_arr_time', None)
 st.session_state.setdefault('last_highlight_dep_time', None)
 st.session_state.setdefault('flash_arr_counter', 0)
@@ -170,9 +173,6 @@ def get_next_event(df, tipo):
 
     return None
 
-# --- Interface Principal ---
-st.set_page_config(page_title="Berenices da Sacada - Aeroporto", layout="wide")
-
 try:
     from streamlit_autorefresh import st_autorefresh
     st_autorefresh(interval=REFRESH_INTERVAL * 1000, key='auto_refresh_data')
@@ -180,27 +180,31 @@ except ImportError:
     st.warning("Para atualização automática, instale: pip install streamlit-autorefresh")
 
 col_toggle, col_title = st.columns([1, 6])
-with col_toggle:
-    st.session_state['modo_simplificado'] = st.checkbox("Simplificar", value=st.session_state['modo_simplificado'])
 
-with col_title:
-    st.markdown("""
-    <h1 style='text-align: left; margin-bottom: 1rem;'>✈ Berenices da Sacada - Aeroporto</h1>
-    """, unsafe_allow_html=True)
+if not st.session_state['modo_simplificado']:
+    with col_toggle:
+        st.session_state['modo_simplificado'] = st.checkbox("Simplificar", value=st.session_state['modo_simplificado'])
 
-now_brt = datetime.now(pytz.timezone('America/Sao_Paulo'))
-st.markdown(f"**Hora local:** {now_brt.strftime('%Y-%m-%d %H:%M:%S')} BRT")
+if not st.session_state['modo_simplificado']:
+    with col_title:
+        st.markdown("""
+        <h1 style='text-align: left; margin-bottom: 1rem;'>✈ Berenices da Sacada - Aeroporto</h1>
+        """, unsafe_allow_html=True)
 
 schedule = load_schedule()
 
-fetched = schedule.get('fetched_at_utc')
-if fetched:
-    fetched_clean = re.sub(r'\..*', '', fetched.replace("T", " ").replace("Z", ""))
-    ts = datetime.strptime(fetched_clean, "%Y-%m-%d %H:%M:%S")
-    ts_brt = ts.replace(tzinfo=pytz.utc).astimezone(pytz.timezone('America/Sao_Paulo'))
-    st.success(f"Dados atualizados em: {ts_brt.strftime('%Y-%m-%d %H:%M:%S')} BRT | Página recarregada às {now_brt.strftime('%H:%M:%S')}")
-else:
-    st.warning("Nenhum dado carregado. Verifique se o flight_collector está rodando.")
+if not st.session_state['modo_simplificado']:
+    now_brt = datetime.now(pytz.timezone('America/Sao_Paulo'))
+    st.markdown(f"**Hora local:** {now_brt.strftime('%Y-%m-%d %H:%M:%S')} BRT")
+
+    fetched = schedule.get('fetched_at_utc')
+    if fetched:
+        fetched_clean = re.sub(r'\..*', '', fetched.replace("T", " ").replace("Z", ""))
+        ts = datetime.strptime(fetched_clean, "%Y-%m-%d %H:%M:%S")
+        ts_brt = ts.replace(tzinfo=pytz.utc).astimezone(pytz.timezone('America/Sao_Paulo'))
+        st.success(f"Dados atualizados em: {ts_brt.strftime('%Y-%m-%d %H:%M:%S')} BRT | Página recarregada às {now_brt.strftime('%H:%M:%S')}")
+    else:
+        st.warning("Nenhum dado carregado. Verifique se o flight_collector está rodando.")
 
 df_arr = to_dataframe(schedule.get('arrivals', []))
 df_dep = to_dataframe(schedule.get('departures', []))
@@ -208,39 +212,241 @@ df_dep = to_dataframe(schedule.get('departures', []))
 highlight_arr = get_next_event(df_arr, 'arrival')
 highlight_dep = get_next_event(df_dep, 'departure')
 
-st.markdown("""
-<style>
-    .center-container > div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-</style>
-""", unsafe_allow_html=True)
 
-if not st.session_state['modo_simplificado']:
-    with st.sidebar:
-        st.markdown("### Próximas Chegadas")
-        if not df_arr.empty:
-            st.dataframe(df_arr.drop(columns=['RawStatus', 'HoraBruta', 'BRTDatetime']), use_container_width=True, height=250)
-        else:
-            st.info("Nenhuma chegada listada.")
 
-        st.markdown("### Próximas Partidas")
-        if not df_dep.empty:
-            st.dataframe(df_dep.drop(columns=['RawStatus', 'HoraBruta', 'BRTDatetime']), use_container_width=True, height=250)
-        else:
-            st.info("Nenhuma partida listada.")
+# App Streamlit - Modo Simplificado Ajustado
+from streamlit.components.v1 import html as st_html
 
-        st.markdown("### Histórico de Destaques")
-        historico = pd.DataFrame(st.session_state['historico_voos'])
-        if not historico.empty:
-            st.dataframe(historico[['Tipo', 'Horario', 'Voo', 'Origem/Destino', 'Companhia']], use_container_width=True, height=180)
-        else:
-            st.info("Nenhum destaque anterior.")
+if st.session_state['modo_simplificado']:
+    # Ocultar UI padrão do Streamlit
+    st.markdown("""
+        <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            .block-container {
+                padding: 0;
+                margin: 0;
+            }
+        </style>
+    """, unsafe_allow_html=True)
+
+    # Cores para piscar
+    flash_arr = st.session_state['flash_arr_counter'] > 0
+    flash_dep = st.session_state['flash_dep_counter'] > 0
+    chegada_color = '#b84c4c' if flash_arr else '#131927'
+    partida_color = '#3db86d' if flash_dep else '#131927'
+
+    # Dados do voo em destaque
+    if highlight_arr is not None:
+        companhia_arr = highlight_arr['Companhia'].split()[0]
+        voo_arr = highlight_arr['Voo']
+        origem_code = schedule.get('arrivals', [])[highlight_arr.name]['flight']['airport']['origin']['code']['iata']
+        status_arr = highlight_arr['Status']
+    else:
+        companhia_arr = voo_arr = origem_code = status_arr = ""
+
+    if highlight_dep is not None:
+        companhia_dep = highlight_dep['Companhia'].split()[0]
+        voo_dep = highlight_dep['Voo']
+        destino_code = schedule.get('departures', [])[highlight_dep.name]['flight']['airport']['destination']['code']['iata']
+        status_dep = highlight_dep['Status']
+    else:
+        companhia_dep = voo_dep = destino_code = status_dep = ""
+
+    # Histórico
+    historico = st.session_state.get('historico_voos', [])
+    ultima_chegada = next((item for item in historico if item.get('Tipo') == 'Chegada'), None)
+    ultima_partida = next((item for item in historico if item.get('Tipo') == 'Partida'), None)
+
+    def format_voo(voo):
+        if voo is None:
+            return ("--:--", "Sem registro", "—")
+        hora = voo.get('Horario', '--:--').replace('h', '')
+        companhia = voo.get('Companhia', '')
+        rota = voo.get('Origem/Destino', '')
+        status = voo.get('Status', '').upper()
+        return (hora, companhia + " " + rota, status)
+
+    chegada_hora, chegada_rota, chegada_status = format_voo(ultima_chegada)
+    partida_hora, partida_rota, partida_status = format_voo(ultima_partida)
+
+    html = f"""
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
+    <style>
+        html, body {{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            background-color: #0b0f1a;
+            font-family: 'Segoe UI', sans-serif;
+            overflow: hidden;
+        }}
+        body {{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }}
+        .container {{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            box-sizing: border-box;
+            margin-top: 10px;
+            padding: 4px;
+        }}
+        .title {{
+            font-size: 10px;
+            font-weight: 700;
+            color: #FFD700;
+            margin: 0 0 4px 2px;
+        }}
+        .grid {{
+            display: grid;
+            grid-template-columns: 25% 75%;
+            grid-template-rows: auto auto;
+            gap: 4px;
+        }}
+        .box.chegada {{
+            background-color: {chegada_color};
+            border-radius: 6px;
+            padding: 6px;
+            font-size: 7px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }}
+        .box.partida {{
+            background-color: {partida_color};
+            border-radius: 6px;
+            padding: 6px;
+            font-size: 7px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }}
+        .box h4 {{
+            color: #FFD700;
+            font-size: 7px;
+            font-weight: bold;
+            margin: 0 0 4px 0;
+        }}
+        .flight {{
+            font-weight: bold;
+            font-size: 7px;
+            color: white;
+            margin-bottom: 2px;
+        }}
+        .time {{
+            font-size: 6px;
+            color: #d058d3;
+        }}
+        .video {{
+            grid-column: 2 / span 1;
+            grid-row: 1 / span 2;
+            width: 100%;
+            height: 100%;
+            border-radius: 6px;
+            overflow: hidden;
+        }}
+        .video iframe {{
+            width: 100%;
+            height: 100%;
+            border: none;
+            object-fit: cover;
+        }}
+        .history {{
+            background-color: #131927;
+            border-radius: 6px;
+            padding: 6px;
+            margin-top: 6px;
+            font-size: 6.5px;
+            color: white;
+        }}
+        .history-title {{
+            font-style: italic;
+            font-weight: bold;
+            font-size: 6.5px;
+            opacity: 0.6;
+            margin-bottom: 4px;
+        }}
+        .history-line {{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2px;
+        }}
+        .history-line span {{
+            display: inline-block;
+            font-size: 6.5px;
+        }}
+    </style>
+    </head>
+    <body>
+        <div class=\"container\">
+            <div class=\"title\">✈️ Berenices da Sacada - Aeroporto</div>
+            <div class=\"grid\">
+                <div class=\"box chegada\">
+                    <h4>🛬 CHEGADA</h4>
+                    <div class=\"flight\">{companhia_arr} {voo_arr} {origem_code} → SP</div>
+                    <div class=\"time\">{status_arr}</div>
+                </div>
+                <div class=\"box partida\">
+                    <h4>🛫 PARTIDA</h4>
+                    <div class=\"flight\">{companhia_dep} {voo_dep} SP → {destino_code}</div>
+                    <div class=\"time\">{status_dep}</div>
+                </div>
+                <div class=\"video\">
+                    <iframe src=\"https://www.youtube.com/embed/llszXlN8oCo?autoplay=1&mute=1&controls=0&showinfo=0\"
+                    allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class=\"history\">
+                <div class=\"history-title\">Histórico</div>
+                <div class=\"history-line\">
+                    <span>{chegada_hora}</span>
+                    <span>{chegada_rota}</span>
+                    <span>{chegada_status}</span>
+                </div>
+                <div class=\"history-line\">
+                    <span>{partida_hora}</span>
+                    <span>{partida_rota}</span>
+                    <span>{partida_status}</span>
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>
+    """
+
+    st_html(html, height=240)
+    st.stop()
+
+
+# MODO NORMAL
+with st.sidebar:
+    st.markdown("### Próximas Chegadas")
+    if not df_arr.empty:
+        st.dataframe(df_arr.drop(columns=['RawStatus', 'HoraBruta', 'BRTDatetime']), use_container_width=True, height=250)
+    else:
+        st.info("Nenhuma chegada listada.")
+
+    st.markdown("### Próximas Partidas")
+    if not df_dep.empty:
+        st.dataframe(df_dep.drop(columns=['RawStatus', 'HoraBruta', 'BRTDatetime']), use_container_width=True, height=250)
+    else:
+        st.info("Nenhuma partida listada.")
+
+    st.markdown("### Histórico de Destaques")
+    historico = pd.DataFrame(st.session_state['historico_voos'])
+    if not historico.empty:
+        st.dataframe(historico[['Tipo', 'Horario', 'Voo', 'Origem/Destino', 'Companhia']], use_container_width=True, height=180)
+    else:
+        st.info("Nenhum destaque anterior.")
 
 with st.container():
-    st.markdown("<div class='center-container'>", unsafe_allow_html=True)
     col1, col2 = st.columns(2)
     with col1:
         st.subheader("Chegada em Destaque")
@@ -257,7 +463,6 @@ with st.container():
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
     allowfullscreen></iframe>
     """, height=500)
-    st.markdown("</div>", unsafe_allow_html=True)
 
 st.markdown("---")
 st.markdown(f"A página e dados são atualizados a cada {REFRESH_INTERVAL}s automaticamente.")
