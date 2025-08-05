@@ -3,3 +3,4 @@ streamlit==1.32.2
 pandas==2.3.0
 requests==2.32.4
 pyopensky==2.15
+streamlit-autorefresh==1.0.1
