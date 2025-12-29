@@ -60,7 +60,7 @@ def to_dataframe(schedule_list):
         callsign = identification.get('callsign') or identification.get('number', {}).get('default', '')
 
         status_raw = flight.get('status', {})
-        status = (status_raw.get('generic', {}).get('status', {}).get('text') or 
+        status = (status_raw.get('generic', {}).get('status', {}).get('text') or
                   status_raw.get('text') or 'unknown')
 
         event_utc_ts = (
@@ -457,10 +457,10 @@ with st.container():
 
     st.subheader("Vídeo ao Vivo")
     st.components.v1.html("""
-    <iframe width="100%" height="500" 
-    src="https://www.youtube.com/embed/llszXlN8oCo?autoplay=1&mute=1" 
-    title="YouTube video player" frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    <iframe width="100%" height="500"
+    src="https://www.youtube.com/watch?v=zpfQZWvtJKo?autoplay=1&mute=1"
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
     allowfullscreen></iframe>
     """, height=500)
 
