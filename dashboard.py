@@ -458,10 +458,12 @@ with st.container():
     st.subheader("Vídeo ao Vivo")
     st.components.v1.html("""
     <iframe width="100%" height="500"
-    src="https://www.youtube.com/watch?v=zpfQZWvtJKo?autoplay=1&mute=1"
-    title="YouTube video player" frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowfullscreen></iframe>
+    src="https://www.youtube-nocookie.com/embed/zpfQZWvtJKo?autoplay=1&mute=1"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+    </iframe>
     """, height=500)
 
 st.markdown("---")
